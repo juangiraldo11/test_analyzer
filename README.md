@@ -17,7 +17,7 @@ This script, `test_results_analyzer.py`, is designed to analyze and process test
 
 ## Input
 - The script expects a JSON file named `test_data.json` by default. You can change the `json_filename` variable in the script to point to your desired JSON file.
-- JSON Structure
+- JSON Structure:
 
     The JSON object must contain a key named "test_cases", which holds an array of test cases.
     Each test case is represented by a JSON object with the following fields:
@@ -26,7 +26,7 @@ This script, `test_results_analyzer.py`, is designed to analyze and process test
     "execution_time": The time taken for test execution in seconds (integer or float).
     "timestamp": The timestamp of when the test was executed in the format %Y-%m-%dT%H:%M:%S (string).
     Ensure your JSON file adheres to this structure for proper processing by the script.
-- 
+
 ## Output
 - The script generates a CSV file (`test_results.csv`) containing test results with columns: 'Test Case Name', 'Status', 'Execution Time', and 'Timestamp'.
 - The calculated metrics are printed to the console, including total test cases, passed test cases, failed test cases, average execution time, minimum execution time, maximum execution time, and Pass Rate.
