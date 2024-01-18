@@ -28,15 +28,14 @@ This script, `test_results_analyzer.py`, is designed to analyze and process test
     Ensure your JSON file adheres to this structure for proper processing by the script.
 ## Output
 - The script generates a CSV file (`test_results.csv`) containing test results with columns: 'Test Case Name', 'Status', 'Execution Time', and 'Timestamp'.
-- The calculated metrics are printed to the console, including total test cases, passed test cases, failed test cases, average execution time, minimum execution time, maximum execution time, and formatted timestamps.
-
+- The calculated metrics are printed to the console, including total test cases, passed test cases, failed test cases, average execution time, minimum execution time, maximum execution time, and Pass Rate.
 ## Example
 ```bash
 python test_results_analyzer.py
 ```
 
 ## Dependencies
-- The script uses the `json` and `csv` modules, which are part of the Python standard library.
+- The script uses the `json` and `csv` modules, which are part of the Python standard library so no more installation is required.
 
 ## Note
 - Ensure that the timestamp format in the input JSON file is in the format `%Y-%m-%dT%H:%M:%S` for accurate processing.
