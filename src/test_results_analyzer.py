@@ -52,7 +52,6 @@ class TestResultsAnalyzer:
         min_execution_time = min(execution_times)
         max_execution_time = max(execution_times)
 
-
         return {
             'Total Test Cases': total_test_cases,
             'Passed Test Cases': passed_test_cases,
@@ -61,8 +60,6 @@ class TestResultsAnalyzer:
             'Average Execution Time': round(average_execution_time, 2),
             'Min Execution Time': min_execution_time,
             'Max Execution Time': max_execution_time,
-
-
         }
 
     def process(self) -> Dict[str, float]:
